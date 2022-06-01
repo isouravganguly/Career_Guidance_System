@@ -9,8 +9,8 @@
   /*Color mode HSL(hue, saturation, lightness)*/
   --hue: 52;
   --first-color: hsl(var(--hue), 95%, 49%);
-  --first-color-alt: hsl(var(--hue), 24%, 28%);
-  --first-color-light: hsl(var(--hue), 24%, 66%);
+  --first-color-alt: hsl(var(--hue), 40%, 92%);
+  --first-color-light: hsl(var(--hue), 96%, 66%);
   --first-color-lighten: hsl(var(--hue), 24%, 92%);
   --title-color: hsl(var(--hue), 4%, 15%);
   --text-color: hsl(var(--hue), 4%, 35%);
@@ -172,6 +172,11 @@ the website, in dark theme
   max-width: 968px;
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
+}
+
+.lmcontainer{
+  max-width: 968px;
+  margin-left: var(--mb-1-5);
 }
 
 .grid{
@@ -477,7 +482,7 @@ the website, in dark theme
 /*Rotate icon, change color of titles and background*/
 .accordion-open .careers__header,
 .accordion-open .careers__content{
-  background-color: var(--first-color);
+  background-color: var(--first-color-light);
 }
 
 .accordion-open .careers__item-title,
@@ -488,6 +493,86 @@ the website, in dark theme
 
 .accordion-open .careers__icon{
   transform: rotate(45deg);
+}
+
+/* ====================== + Video Content + ========================== */
+
+.videos{
+  background-color: var(--first-color-alt);
+}
+.video-section__title{
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-medium);
+  color: var(--title-color);
+  padding: 1rem;
+}
+
+.video__content{
+  display: flex;
+  overflow-x: auto;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.video__content::-webkit-scrollbar {
+  display: none;
+}
+
+.video__each{
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+/* ====== Partner Content ============== */
+.partners{
+  background-color: var(--first-color-lighten)
+}
+.partners-section__title{
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+  font-size: var(--h1-font-size);
+  padding: 1rem;
+}
+
+.partner__content{
+  display: flex;
+  overflow-x: auto;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.partner__content::-webkit-scrollbar {
+  display: none;
+}
+
+
+.partner__content-card{
+  display: block;
+  width: 200px;
+  background-color: var(--container-color);
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px hsla(var(--hue), 4%, 15%, .15);
+  margin: 1rem;
+  padding: 2rem;
+}
+
+.partner__content-icon{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+
+.partner__content-img{
+  width: 180px;
+}
+
+.partner__content-name{
+  color: var(--text-color);
+  font-size: var(--h3-font-size);
+  font-weight: var(--normal-font-size);
 }
 
 /*=============== CONTACT ===============*/
